@@ -11,7 +11,6 @@
 
 extern NSString *EADSessionDataReceivedNotification;
 
-// NOTE: EADSessionController is not threadsafe, calling methods from different threads will lead to unpredictable results
 @interface EADSessionController : NSObject <EAAccessoryDelegate, NSStreamDelegate>
 
 + (EADSessionController *)sharedController;
@@ -21,10 +20,10 @@ extern NSString *EADSessionDataReceivedNotification;
 - (BOOL)openSession;
 - (void)closeSession;
 
-- (void)writeData:(NSData *)data;
+- (NSInteger)readCacheWith:(uint8_t *)buffer andLength:(NSUInteger)length;
+- (NSInteger)writeCacheWith:(const uint8_t *)buffer andLength:(NSUInteger)length;
 
 - (NSUInteger)readBytesAvailable;
-- (NSData *)readData:(NSUInteger)bytesToRead;
 
 @property (nonatomic, readonly) EAAccessory *accessory;
 @property (nonatomic, readonly) NSString *protocolString;

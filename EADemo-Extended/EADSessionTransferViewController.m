@@ -33,7 +33,7 @@
     if (buf)
     {
         uint32_t len = (uint32_t)strlen(buf) + 1;
-        [[EADSessionController sharedController] writeData:[NSData dataWithBytes:buf length:len]];
+        [[EADSessionController sharedController] writeCacheWith:(const uint8_t*)buf andLength:len];
     }
 }
 
@@ -68,7 +68,7 @@
             }
         }
 
-        [[EADSessionController sharedController] writeData:data];
+        [[EADSessionController sharedController] writeCacheWith:data.bytes andLength:data.length];
     }
 }
 
@@ -82,7 +82,8 @@
         buf[i] = (i & 0xFF);  // fill buf with incrementing bytes;
     }
 
-	[[EADSessionController sharedController] writeData:[NSData dataWithBytes:buf length:STRESS_TEST_BYTE_COUNT]];
+    [[EADSessionController sharedController] writeCacheWith:buf andLength:STRESS_TEST_BYTE_COUNT];
+
 }
 
 #pragma mark UIViewController
@@ -153,11 +154,13 @@
     uint32_t bytesAvailable = 0;
 
     while ((bytesAvailable = (uint32_t)[sessionController readBytesAvailable]) > 0) {
-        NSData *data = [sessionController readData:bytesAvailable];
-        if (data) {
+        uint8_t *dataBytes = calloc(bytesAvailable, sizeof(uint8_t));
+        NSInteger bytesRead = [sessionController readCacheWith:dataBytes andLength:bytesAvailable];
+        if (bytesRead > 0) {
 
             _totalBytesRead = _totalBytesRead + bytesAvailable;
         }
+        free(dataBytes);
     }
 
     [_receivedBytesCountLabel setText:[NSString stringWithFormat:@"Bytes Received from Session: %u", (unsigned int)_totalBytesRead]];

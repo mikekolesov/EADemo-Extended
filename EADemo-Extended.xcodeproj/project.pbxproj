@@ -16,7 +16,8 @@
 		30EBAAFF1CFFA1E60073732B /* EADSessionTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EBAAFB1CFFA1E60073732B /* EADSessionTransferViewController.m */; };
 		30EBAB001CFFA1E60073732B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EBAAFD1CFFA1E60073732B /* RootViewController.m */; };
 		BF4E0EA61FDAF189001784C3 /* Original_README.md in Resources */ = {isa = PBXBuildFile; fileRef = BF4E0EA51FDAF189001784C3 /* Original_README.md */; };
-		BF4E0EA71FDAF1C0001784C3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30EBAAEF1CFFA0950073732B /* Info.plist */; };
+		BF4E0EAA1FDB2EA8001784C3 /* NSThread+RunBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4E0EA91FDB2EA8001784C3 /* NSThread+RunBlock.m */; };
+		BF4E0EAD1FDB2F68001784C3 /* EADSessionController+SpeedMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4E0EAC1FDB2F68001784C3 /* EADSessionController+SpeedMeasure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,10 @@
 		30EBAAFC1CFFA1E60073732B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		30EBAAFD1CFFA1E60073732B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		BF4E0EA51FDAF189001784C3 /* Original_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Original_README.md; sourceTree = "<group>"; };
+		BF4E0EA81FDB2EA8001784C3 /* NSThread+RunBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSThread+RunBlock.h"; sourceTree = "<group>"; };
+		BF4E0EA91FDB2EA8001784C3 /* NSThread+RunBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSThread+RunBlock.m"; sourceTree = "<group>"; };
+		BF4E0EAB1FDB2F68001784C3 /* EADSessionController+SpeedMeasure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EADSessionController+SpeedMeasure.h"; sourceTree = "<group>"; };
+		BF4E0EAC1FDB2F68001784C3 /* EADSessionController+SpeedMeasure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EADSessionController+SpeedMeasure.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +75,7 @@
 		30EBAADD1CFFA0950073732B /* EADemo-Extended */ = {
 			isa = PBXGroup;
 			children = (
+				BF4E0EAE1FDB2FF6001784C3 /* Helpers */,
 				30EBAAF51CFFA1AA0073732B /* AppDelegate.h */,
 				30EBAAF61CFFA1AA0073732B /* AppDelegate.m */,
 				30EBAAF81CFFA1E60073732B /* EADSessionController.h */,
@@ -93,6 +99,17 @@
 				30EBAADF1CFFA0950073732B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF4E0EAE1FDB2FF6001784C3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF4E0EA81FDB2EA8001784C3 /* NSThread+RunBlock.h */,
+				BF4E0EA91FDB2EA8001784C3 /* NSThread+RunBlock.m */,
+				BF4E0EAB1FDB2F68001784C3 /* EADSessionController+SpeedMeasure.h */,
+				BF4E0EAC1FDB2F68001784C3 /* EADSessionController+SpeedMeasure.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +138,7 @@
 		30EBAAD31CFFA0950073732B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = DTS;
 				TargetAttributes = {
 					30EBAADA1CFFA0950073732B = {
@@ -156,7 +173,6 @@
 				30EBAAEE1CFFA0950073732B /* LaunchScreen.storyboard in Resources */,
 				30EBAAEB1CFFA0950073732B /* Assets.xcassets in Resources */,
 				30EBAAE91CFFA0950073732B /* Main.storyboard in Resources */,
-				BF4E0EA71FDAF1C0001784C3 /* Info.plist in Resources */,
 				BF4E0EA61FDAF189001784C3 /* Original_README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,8 +186,10 @@
 			files = (
 				30EBAAE01CFFA0950073732B /* main.m in Sources */,
 				30EBAAFE1CFFA1E60073732B /* EADSessionController.m in Sources */,
+				BF4E0EAD1FDB2F68001784C3 /* EADSessionController+SpeedMeasure.m in Sources */,
 				30EBAAF71CFFA1AA0073732B /* AppDelegate.m in Sources */,
 				30EBAAFF1CFFA1E60073732B /* EADSessionTransferViewController.m in Sources */,
+				BF4E0EAA1FDB2EA8001784C3 /* NSThread+RunBlock.m in Sources */,
 				30EBAB001CFFA1E60073732B /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,13 +225,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -251,13 +277,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
