@@ -15,11 +15,13 @@
 		30EBAAFE1CFFA1E60073732B /* EADSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EBAAF91CFFA1E60073732B /* EADSessionController.m */; };
 		30EBAAFF1CFFA1E60073732B /* EADSessionTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EBAAFB1CFFA1E60073732B /* EADSessionTransferViewController.m */; };
 		30EBAB001CFFA1E60073732B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EBAAFD1CFFA1E60073732B /* RootViewController.m */; };
+		BF4E0EA61FDAF189001784C3 /* Original_README.md in Resources */ = {isa = PBXBuildFile; fileRef = BF4E0EA51FDAF189001784C3 /* Original_README.md */; };
+		BF4E0EA71FDAF1C0001784C3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30EBAAEF1CFFA0950073732B /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30DD4E9D1D53A6C000735751 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		30EBAADB1CFFA0950073732B /* EADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EBAADB1CFFA0950073732B /* EADemo-Extended.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EADemo-Extended.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EBAADF1CFFA0950073732B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30EBAAE81CFFA0950073732B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30EBAAEA1CFFA0950073732B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +35,7 @@
 		30EBAAFB1CFFA1E60073732B /* EADSessionTransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EADSessionTransferViewController.m; sourceTree = "<group>"; };
 		30EBAAFC1CFFA1E60073732B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		30EBAAFD1CFFA1E60073732B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		BF4E0EA51FDAF189001784C3 /* Original_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Original_README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +53,8 @@
 			isa = PBXGroup;
 			children = (
 				30DD4E9D1D53A6C000735751 /* README.md */,
-				30EBAADD1CFFA0950073732B /* EADemo */,
+				BF4E0EA51FDAF189001784C3 /* Original_README.md */,
+				30EBAADD1CFFA0950073732B /* EADemo-Extended */,
 				30EBAADC1CFFA0950073732B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +62,12 @@
 		30EBAADC1CFFA0950073732B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30EBAADB1CFFA0950073732B /* EADemo.app */,
+				30EBAADB1CFFA0950073732B /* EADemo-Extended.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		30EBAADD1CFFA0950073732B /* EADemo */ = {
+		30EBAADD1CFFA0950073732B /* EADemo-Extended */ = {
 			isa = PBXGroup;
 			children = (
 				30EBAAF51CFFA1AA0073732B /* AppDelegate.h */,
@@ -79,7 +83,7 @@
 				30EBAAEC1CFFA0950073732B /* LaunchScreen.storyboard */,
 				30EBAADE1CFFA0950073732B /* Supporting Files */,
 			);
-			path = EADemo;
+			path = "EADemo-Extended";
 			sourceTree = "<group>";
 		};
 		30EBAADE1CFFA0950073732B /* Supporting Files */ = {
@@ -94,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30EBAADA1CFFA0950073732B /* EADemo */ = {
+		30EBAADA1CFFA0950073732B /* EADemo-Extended */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30EBAAF21CFFA0950073732B /* Build configuration list for PBXNativeTarget "EADemo" */;
+			buildConfigurationList = 30EBAAF21CFFA0950073732B /* Build configuration list for PBXNativeTarget "EADemo-Extended" */;
 			buildPhases = (
 				30EBAAD71CFFA0950073732B /* Sources */,
 				30EBAAD81CFFA0950073732B /* Frameworks */,
@@ -106,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = EADemo;
+			name = "EADemo-Extended";
 			productName = EADemo;
-			productReference = 30EBAADB1CFFA0950073732B /* EADemo.app */;
+			productReference = 30EBAADB1CFFA0950073732B /* EADemo-Extended.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,10 +126,11 @@
 				TargetAttributes = {
 					30EBAADA1CFFA0950073732B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = AFY6TH93WY;
 					};
 				};
 			};
-			buildConfigurationList = 30EBAAD61CFFA0950073732B /* Build configuration list for PBXProject "EADemo" */;
+			buildConfigurationList = 30EBAAD61CFFA0950073732B /* Build configuration list for PBXProject "EADemo-Extended" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -138,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30EBAADA1CFFA0950073732B /* EADemo */,
+				30EBAADA1CFFA0950073732B /* EADemo-Extended */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +156,8 @@
 				30EBAAEE1CFFA0950073732B /* LaunchScreen.storyboard in Resources */,
 				30EBAAEB1CFFA0950073732B /* Assets.xcassets in Resources */,
 				30EBAAE91CFFA0950073732B /* Main.storyboard in Resources */,
+				BF4E0EA71FDAF1C0001784C3 /* Info.plist in Resources */,
+				BF4E0EA61FDAF189001784C3 /* Original_README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +286,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = EADemo/Info.plist;
+				DEVELOPMENT_TEAM = AFY6TH93WY;
+				INFOPLIST_FILE = "$(SRCROOT)/EADemo-Extended/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.EADemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "self.example.apple-samplecode.EADemoExt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -293,9 +301,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = EADemo/Info.plist;
+				DEVELOPMENT_TEAM = AFY6TH93WY;
+				INFOPLIST_FILE = "$(SRCROOT)/EADemo-Extended/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.EADemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "self.example.apple-samplecode.EADemoExt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -304,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30EBAAD61CFFA0950073732B /* Build configuration list for PBXProject "EADemo" */ = {
+		30EBAAD61CFFA0950073732B /* Build configuration list for PBXProject "EADemo-Extended" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30EBAAF01CFFA0950073732B /* Debug */,
@@ -313,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30EBAAF21CFFA0950073732B /* Build configuration list for PBXNativeTarget "EADemo" */ = {
+		30EBAAF21CFFA0950073732B /* Build configuration list for PBXNativeTarget "EADemo-Extended" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30EBAAF31CFFA0950073732B /* Debug */,
